@@ -5,4 +5,8 @@
     <color name="darkNavy">#FF0A1929</color>
     <color name="luxuryGold">#FFB8935E</color>
     <color name="softCream">#FFFAF8F5</color>
+    <color name="darkBlue">#080918</color>
+    <color name="darkRed">#4e0202</color>
+    <color name="brightRed">#c30000</color>
+
 </resources>
