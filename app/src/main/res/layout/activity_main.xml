@@ -163,8 +163,7 @@
                         android:text="RESERVE EXPERIENCE"
                         android:textColor="#B8935E"
                         android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:onClick="goToLogin"/>
+                        android:textStyle="bold"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -445,5 +444,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

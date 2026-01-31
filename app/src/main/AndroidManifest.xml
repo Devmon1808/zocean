@@ -29,20 +29,8 @@
             android:exported="false" />
 
         <activity
-            android:name=".BookingActivity"
+            android:name=".PaymentSummaryActivity"
             android:exported="false" />
-
-        <activity
-            android:name=".AdminPanel"
-            android:exported="false" />
-        <activity
-            android:name=".PaymentD1"
-            android:exported="false" />
-
-        <activity
-            android:name=".GuestAdminPanel"
-            android:exported="false" />
-
 
     </application>
 
