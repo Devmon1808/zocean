@@ -56,5 +56,6 @@
         android:textColor="@color/brightRed"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:letterSpacing="0.15"/>
+        android:letterSpacing="0.15"
+        android:onClick="goToGuest"/>
 </LinearLayout>

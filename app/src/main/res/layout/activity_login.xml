@@ -32,7 +32,7 @@
         android:layout_marginBottom="40dp"/>
 
     <EditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/et_usernameInput"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:hint="Username"
@@ -43,9 +43,8 @@
         android:inputType="text"
         android:layout_marginBottom="16dp"
         android:elevation="100dp"/>
-
     <EditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/et_passwordInput"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:hint="Password"
@@ -58,7 +57,7 @@
         android:elevation="100dp"/>
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/b_loginButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="SIGN IN"
@@ -66,5 +65,17 @@
         android:textColor="@color/darkNavy"
         android:textSize="15sp"
         android:textStyle="bold"
+        android:letterSpacing="0.15" />
+
+    <Button
+        android:id="@+id/b_backButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="BACK"
+        android:backgroundTint="@color/luxuryGold"
+        android:textColor="@color/darkNavy"
+        android:textSize="15sp"
+        android:textStyle="bold"
         android:letterSpacing="0.15"/>
+
 </LinearLayout>

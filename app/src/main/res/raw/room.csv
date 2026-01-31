@@ -1,0 +1,11 @@
+RoomID,HotelID,RoomNumber,RoomType,RoomStatus
+R01,H01,10011,Single,Occupied
+R02,H02,10012,Single,Occupied
+R03,H03,10013,Double,Occupied
+R04,H04,10014,Double,Occupied
+R05,H05,10015,Suite,Occupied
+R06,H06,10016,Single,Occupied
+R07,H07,10017,Double,Occupied
+R08,H08,10018,Double,Occupied
+R09,H09,10019,Suite,Occupied
+R10,H10,10020,Suite,Occupied

@@ -1,0 +1,11 @@
+PaymentID,BookingID,PaymentDate,TotalAmount,PaymentMethod
+P01,B01,1-Dec-25,"11,100",Cash
+P02,B02,17-Nov-25,"7,400",Online Payment
+P03,B03,3-Mar-25,"6,700",Credit Card
+P04,B04,28-Feb-25,"46,900",Online Payment
+P05,B05,14-Feb-25,"9,700",Cash
+P06,B06,13-Jan-25,"25,900",Credit Card
+P07,B07,1-Sep-24,"6,700",Cash
+P08,B08,7-Jul-24,"93,800",Credit Card
+P09,B09,3-Jun-24,"67,900",Online Payment
+P10,B10,14-Feb-24,"9,700",Online Payment

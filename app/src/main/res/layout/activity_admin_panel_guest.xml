@@ -51,7 +51,8 @@
             android:textSize="12sp"
             android:backgroundTint="@color/darkRed"
             android:textColor="#FFFFFF"
-            android:layout_marginEnd="4dp"/>
+            android:layout_marginEnd="4dp"
+            android:onClick="goToRoom"/>
 
         <Button
             android:id="@+id/tabBookings"
@@ -61,7 +62,8 @@
             android:text="BOOKINGS"
             android:textSize="12sp"
             android:backgroundTint="@color/darkRed"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:onClick="goToBooking"/>
     </LinearLayout>
 
     <ScrollView

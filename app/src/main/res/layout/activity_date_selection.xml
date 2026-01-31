@@ -58,15 +58,19 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <TextView
+                <EditText
                     android:id="@+id/checkInDateText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Not selected"
-                    android:textStyle="italic"
+                    android:hint="YYYY-MM-DD"
                     android:textColor="@color/softCream"
-                    android:textSize="16sp" />
+                    android:textColorHint="@color/softCream"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textSize="16dp"
+                    android:focusable="false"/>
+
             </LinearLayout>
 
             <Button
@@ -105,15 +109,19 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <TextView
+                <EditText
                     android:id="@+id/checkOutDateText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Not selected"
-                    android:textStyle="italic"
+                    android:hint="YYYY-MM-DD"
                     android:textColor="@color/softCream"
-                    android:textSize="16sp" />
+                    android:textSize="16dp"
+                    android:textColorHint="@color/softCream"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:focusable="false"/>
+
             </LinearLayout>
 
             <Button
@@ -139,6 +147,6 @@
         android:textSize="15sp"
         android:textStyle="bold"
         android:letterSpacing="0.15"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>

@@ -194,6 +194,6 @@
         android:textColor="@color/darkNavy"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:letterSpacing="0.15"/>
+        android:letterSpacing="0.15" />
 
 </LinearLayout>

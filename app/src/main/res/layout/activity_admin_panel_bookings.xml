@@ -17,7 +17,7 @@
         android:layout_marginBottom="12dp"/>
 
     <EditText
-        android:id="@+id/inputBookingGuestId"
+        android:id="@+id/et_usernameInput"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Guest ID"
@@ -28,7 +28,7 @@
         android:layout_marginBottom="8dp"/>
 
     <EditText
-        android:id="@+id/inputBookingRoomId"
+        android:id="@+id/et_inputBookingRoomId"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Room ID"
@@ -39,7 +39,7 @@
         android:layout_marginBottom="8dp"/>
 
     <EditText
-        android:id="@+id/inputCheckIn"
+        android:id="@+id/et_inputCheckIn"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Check-in Date"
@@ -50,7 +50,7 @@
         android:layout_marginBottom="8dp"/>
 
     <EditText
-        android:id="@+id/inputCheckOut"
+        android:id="@+id/et_inputCheckOut"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Check-out Date"
@@ -61,7 +61,7 @@
         android:layout_marginBottom="8dp"/>
 
     <EditText
-        android:id="@+id/inputTotalPrice"
+        android:id="@+id/et_inputTotalPrice"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Total Price"
@@ -73,7 +73,7 @@
         android:layout_marginBottom="12dp"/>
 
     <Button
-        android:id="@+id/btnAddBooking"
+        android:id="@+id/b_AddBooking"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:text="ADD BOOKING"
@@ -118,6 +118,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
+                    android:id="@+id/tv_guest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Guest:"
@@ -125,6 +126,7 @@
                     android:textColor="#FFFFFF"/>
 
                 <TextView
+                    android:id="@+id/tv_room"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Room:"
@@ -132,13 +134,15 @@
                     android:textColor="#B0BEC5"/>
 
                 <TextView
+                    android:id="@+id/tv_checkIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Check-in:"
-                    android:textSize="12sp"
-                    android:textColor="#B0BEC5"/>
+                    android:textColor="#B0BEC5"
+                    android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/tv_checkOut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Check-out:"
@@ -146,6 +150,7 @@
                     android:textColor="#B0BEC5"/>
 
                 <TextView
+                    android:id="@+id/tv_total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Total:"
@@ -161,16 +166,18 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/b_edit"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
+                        android:layout_marginEnd="4dp"
                         android:layout_weight="1"
-                        android:text="EDIT"
-                        android:textSize="12sp"
                         android:backgroundTint="@color/darkRed"
+                        android:text="EDIT"
                         android:textColor="#FFFFFF"
-                        android:layout_marginEnd="4dp"/>
+                        android:textSize="12sp" />
 
                     <Button
+                        android:id="@+id/b_delete"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_weight="1"
