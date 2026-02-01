@@ -32,6 +32,10 @@
             android:name=".PaymentSummaryActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
