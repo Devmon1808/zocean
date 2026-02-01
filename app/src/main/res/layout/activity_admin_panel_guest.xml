@@ -22,6 +22,18 @@
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
+        <Button
+            android:id="@+id/btnAdminSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="16dp"
+            android:text="SIGN OUT"
+            android:textSize="10sp"
+            android:textColor="@color/luxuryGold"
+            android:backgroundTint="@android:color/transparent"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -51,8 +63,7 @@
             android:textSize="12sp"
             android:backgroundTint="@color/darkRed"
             android:textColor="#FFFFFF"
-            android:layout_marginEnd="4dp"
-            android:onClick="goToRoom"/>
+            android:layout_marginEnd="4dp"/>
 
         <Button
             android:id="@+id/tabBookings"
@@ -62,8 +73,7 @@
             android:text="BOOKINGS"
             android:textSize="12sp"
             android:backgroundTint="@color/darkRed"
-            android:textColor="#FFFFFF"
-            android:onClick="goToBooking"/>
+            android:textColor="#FFFFFF"/>
     </LinearLayout>
 
     <ScrollView
@@ -73,369 +83,89 @@
         android:padding="16dp">
 
         <LinearLayout
-            android:id="@+id/contentArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Add New Guest-"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/inputGuestId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Guest ID"
+                android:textColorHint="#B0BEC5"
+                android:textColor="#FFFFFF"
+                android:background="@color/darkBlue"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/inputGuestName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Guest Name"
+                android:textColorHint="#B0BEC5"
+                android:textColor="#FFFFFF"
+                android:background="@color/darkBlue"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/inputGuestEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#B0BEC5"
+                android:textColor="#FFFFFF"
+                android:background="@color/darkBlue"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/inputGuestPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColorHint="#B0BEC5"
+                android:textColor="#FFFFFF"
+                android:background="@color/darkBlue"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnAddGuest"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="ADD GUEST"
+                android:backgroundTint="@color/darkNavy"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-All Guests-"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
             <LinearLayout
-                android:id="@+id/sectionGuests"
+                android:id="@+id/guestListContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="-Add New Guest-"
-                    android:textSize="18sp"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="12dp"/>
-
-                <EditText
-                    android:id="@+id/inputGuestId"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:hint="Guest ID"
-                    android:textColorHint="#B0BEC5"
-                    android:textColor="#FFFFFF"
-                    android:background="@color/darkBlue"
-                    android:padding="12dp"
-                    android:layout_marginBottom="8dp"/>
-
-                <EditText
-                    android:id="@+id/inputGuestName"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:hint="Guest Name"
-                    android:textColorHint="#B0BEC5"
-                    android:textColor="#FFFFFF"
-                    android:background="@color/darkBlue"
-                    android:padding="12dp"
-                    android:layout_marginBottom="8dp"/>
-
-                <EditText
-                    android:id="@+id/inputGuestEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress"
-                    android:textColorHint="#B0BEC5"
-                    android:textColor="#FFFFFF"
-                    android:background="@color/darkBlue"
-                    android:padding="12dp"
-                    android:layout_marginBottom="8dp"/>
-
-                <EditText
-                    android:id="@+id/inputGuestPhone"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:hint="Phone Number"
-                    android:inputType="phone"
-                    android:textColorHint="#B0BEC5"
-                    android:textColor="#FFFFFF"
-                    android:background="@color/darkBlue"
-                    android:padding="12dp"
-                    android:layout_marginBottom="12dp"/>
-
-                <Button
-                    android:id="@+id/btnAddGuest"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:text="ADD GUEST"
-                    android:backgroundTint="@color/darkNavy"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="24dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="-All Guests-"
-                    android:textSize="18sp"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="12dp"/>
-
-                <LinearLayout
-                    android:id="@+id/guestListContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="@color/darkBlue"
-                        android:padding="12dp"
-                        android:layout_marginBottom="8dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ID: G01"
-                            android:textSize="14sp"
-                            android:textColor="#4CAF50"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Name:"
-                            android:textSize="14sp"
-                            android:textColor="#FFFFFF"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Email:"
-                            android:textSize="12sp"
-                            android:textColor="#B0BEC5"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Phone:"
-                            android:textSize="12sp"
-                            android:textColor="#B0BEC5"
-                            android:layout_marginBottom="8dp"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:text="EDIT"
-                                android:textSize="12sp"
-                                android:backgroundTint="@color/darkRed"
-                                android:textColor="#FFFFFF"
-                                android:layout_marginEnd="4dp"/>
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:text="DELETE"
-                                android:textSize="12sp"
-                                android:backgroundTint="@color/darkRed"
-                                android:textColor="#FFFFFF"/>
-                        </LinearLayout>
-                    </LinearLayout>
-
-
-                    <TextView
-                        android:id="@+id/txtNoGuests"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No guests yet. Add one above."
-                        android:textSize="14sp"
-                        android:textColor="#B0BEC5"
-                        android:visibility="gone"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/sectionRooms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="🏨 All Rooms"
-                    android:textSize="18sp"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="12dp"/>
-
-                <LinearLayout
-                    android:id="@+id/roomListContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="#1E3A5F"
-                        android:padding="12dp"
-                        android:layout_marginBottom="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="8dp">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Room R01"
-                                android:textSize="16sp"
-                                android:textColor="#FFFFFF"
-                                android:textStyle="bold"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Available"
-                                android:textSize="12sp"
-                                android:textColor="#4CAF50"
-                                android:background="#1B5E20"
-                                android:padding="4dp"/>
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Type: OCEAN SINGLE"
-                            android:textSize="14sp"
-                            android:textColor="#B0BEC5"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Price: ₱37,000"
-                            android:textSize="14sp"
-                            android:textColor="#B0BEC5"
-                            android:layout_marginBottom="8dp"/>
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:text="🔄 CHANGE STATUS"
-                            android:textSize="12sp"
-                            android:backgroundTint="#F57C00"
-                            android:textColor="#FFFFFF"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/sectionBookings"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="📅 All Bookings"
-                    android:textSize="18sp"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="12dp"/>
-
-                <LinearLayout
-                    android:id="@+id/bookingListContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="#1E3A5F"
-                        android:padding="12dp"
-                        android:layout_marginBottom="8dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Booking #1"
-                            android:textSize="16sp"
-                            android:textColor="#4CAF50"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Guest: G01 - John Doe"
-                            android:textSize="14sp"
-                            android:textColor="#FFFFFF"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Room: R01 (OCEAN SINGLE)"
-                            android:textSize="14sp"
-                            android:textColor="#B0BEC5"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Check-in: Feb 1, 2026"
-                            android:textSize="12sp"
-                            android:textColor="#B0BEC5"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Check-out: Feb 5, 2026"
-                            android:textSize="12sp"
-                            android:textColor="#B0BEC5"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Total: ₱148,000"
-                            android:textSize="14sp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            android:layout_marginTop="4dp"
-                            android:layout_marginBottom="8dp"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:text="✏️ EDIT DATES"
-                                android:textSize="12sp"
-                                android:backgroundTint="#F57C00"
-                                android:textColor="#FFFFFF"
-                                android:layout_marginEnd="4dp"/>
-
-                            <Button
-                                android:layout_width="0dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:text="🗑️ DELETE"
-                                android:textSize="12sp"
-                                android:backgroundTint="#C62828"
-                                android:textColor="#FFFFFF"/>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/txtNoBookings"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No bookings yet."
-                        android:textSize="14sp"
-                        android:textColor="#B0BEC5"
-                        android:visibility="gone"/>
-
-                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

@@ -444,4 +444,18 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:text="SIGN OUT"
+        android:textColor="#B8935E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:backgroundTint="#1A0A1929"
+        android:visibility="gone"/>
+
 </LinearLayout>

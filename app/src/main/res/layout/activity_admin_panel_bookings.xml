@@ -7,6 +7,77 @@
     android:background="@drawable/gradient_background3"
     android:padding="16dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/darkBlue"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN PANEL"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnAdminSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="16dp"
+            android:text="SIGN OUT"
+            android:textSize="10sp"
+            android:textColor="@color/luxuryGold"
+            android:backgroundTint="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/darkBlue"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/tabGuests"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="GUESTS"
+            android:textSize="12sp"
+            android:backgroundTint="@color/darkRed"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/tabRooms"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="ROOMS"
+            android:textSize="12sp"
+            android:backgroundTint="@color/darkRed"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/tabBookings"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="BOOKINGS"
+            android:textSize="12sp"
+            android:backgroundTint="@color/darkRed"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,94 +171,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@color/darkBlue"
-                android:padding="12dp"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Booking #1"
-                    android:textSize="14sp"
-                    android:textColor="#4CAF50"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/tv_guest"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Guest:"
-                    android:textSize="14sp"
-                    android:textColor="#FFFFFF"/>
-
-                <TextView
-                    android:id="@+id/tv_room"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Room:"
-                    android:textSize="12sp"
-                    android:textColor="#B0BEC5"/>
-
-                <TextView
-                    android:id="@+id/tv_checkIn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Check-in:"
-                    android:textColor="#B0BEC5"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/tv_checkOut"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Check-out:"
-                    android:textSize="12sp"
-                    android:textColor="#B0BEC5"/>
-
-                <TextView
-                    android:id="@+id/tv_total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total:"
-                    android:textSize="14sp"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="8dp"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/b_edit"
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="4dp"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/darkRed"
-                        android:text="EDIT"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                    <Button
-                        android:id="@+id/b_delete"
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:text="DELETE"
-                        android:textSize="12sp"
-                        android:backgroundTint="@color/darkRed"
-                        android:textColor="#FFFFFF"/>
-                </LinearLayout>
-            </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 

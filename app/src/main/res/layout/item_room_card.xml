@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/darkBlue"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/tvRoomId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID: R01"
+            android:textSize="14sp"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvRoomStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:textSize="12sp"
+            android:textColor="#4CAF50"
+            android:background="#1B5E20"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRoomType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: OCEAN SINGLE"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvRoomPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: ₱37,000"
+        android:textSize="12sp"
+        android:textColor="#B0BEC5"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_update"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:textSize="12sp"
+            android:backgroundTint="@color/darkRed"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:textSize="12sp"
+            android:backgroundTint="@color/darkRed"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
