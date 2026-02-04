@@ -13,7 +13,7 @@ import java.util.List;
 @Dao
 public interface GuestDao {
     @Insert
-    void insert(Guest guest);
+    long insert(Guest guest);
 
     @Update
     void update(Guest guest);
@@ -26,4 +26,7 @@ public interface GuestDao {
 
     @Query("SELECT * FROM guests WHERE guestId = :id")
     Guest getGuestById(int id);
+
+    @Query("SELECT * FROM guests WHERE email = :email LIMIT 1")
+    Guest getGuestByEmail(String email);
 }

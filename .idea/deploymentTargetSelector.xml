@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="zocean">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-02-01T09:47:19.206125Z">
+        <DropdownSelection timestamp="2026-02-02T17:59:46.650079900Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\yanya\.android\avd\Pixel_4.avd" />

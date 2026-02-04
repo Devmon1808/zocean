@@ -13,7 +13,7 @@ import java.util.List;
 @Dao
 public interface RoomDao {
     @Insert
-    void insert(Room room);
+    long insert(Room room);  // Changed from void to long
 
     @Update
     void update(Room room);
@@ -29,4 +29,7 @@ public interface RoomDao {
 
     @Query("UPDATE rooms SET status = :status WHERE roomId = :roomId")
     void updateRoomStatus(int roomId, String status);
+
+    @Query("SELECT * FROM rooms WHERE roomType = :roomType LIMIT 1")
+    Room getRoomByType(String roomType);
 }
